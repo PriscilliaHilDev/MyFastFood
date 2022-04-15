@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
         backgroundColor:'#fff',
         borderRadius:50,
         backgroundColor:colors.MarronDark,
-        //bottom:windowWidth/85
        
     },
     buttonRondedInactif:{

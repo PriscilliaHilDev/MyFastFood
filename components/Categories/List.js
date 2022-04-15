@@ -26,15 +26,7 @@ const List = () => {
         
     }
 
-    //  const CatNoFilter = [
-     
-    //  ]
-    //  const newdataCategories = readCategories.concat(CatNoFilter)
-
-
-
-    
-
+ 
   
       useEffect(() => {
   

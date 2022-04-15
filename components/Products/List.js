@@ -34,13 +34,9 @@ const List = ({navig}) => {
            if(snapshot && !snapshot.empty){
               snapshot.forEach(element => {
                 allProducts.push({id:element.id, ...element.data()});
-                //i++
+              
               })
-              // if(i == allProducts.length ){
-              //   setTimeout(() => {
-              //     setLoading(false)
-              // }, 10000)
-              // }
+             
               setTimeout(() => {
                     setLoading(false)
                 }, 2000)

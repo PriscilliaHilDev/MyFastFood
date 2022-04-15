@@ -100,14 +100,7 @@ const getData = ({route, navigation}) => {
 
     };
 
-    // // quand l'utilisateur fournit son adresse et son numero de telephone
-    // const getPayment = () => {
-    //     if(address !== null && value !== null && formattedValue !== null){
-    //         //updateUser()
-    //         openPaymentSheet()
-    //     } 
-    // }
-
+  
     const goCart = () => {
         navigation.navigate('Cart'),
          setCheck1(false)

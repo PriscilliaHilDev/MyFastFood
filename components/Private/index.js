@@ -10,9 +10,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Content from './content';
 import FilterProducts from "../filterProducts"
 import DetailOrders from "../DetailsOrder";
-// import { NavigationContainer, DarkTheme } from '@react-navigation/native';
-// import colors from '../../assets/colors';
-// import { withBadge, Icon as Icones } from 'react-native-elements'
+
 import { useDispatch, useSelector } from 'react-redux';
 import { productListByCategory } from '../../Redux/Actions/byCategory';
 import {FirebaseContext} from '../../FirebaseContext';
@@ -96,52 +94,6 @@ useEffect(() => {
 
   return (
   
-  // <Tab.Navigator
-  //      screenOptions={{
-  //        title:false
-  //      }}
-  //      barStyle={{
-  //        backgroundColor:'#fff', 
-  //      }}
-  //      activeColor={colors.subTitle}
-  //      inactiveColor='#CFC2AF'
-      
-     
-  // >
-  //   <Tab.Screen name="Home" component={ScreenNavig} 
-  //      options={{
-  //       // tabBarLabel: 'Home',
-        
-  //       tabBarIcon: ({ color }) => (
-  //         <MaterialCommunityIcons name="home" color={color} size={26} />
-  //       ),
-       
-  //     }}
-  
-      
-     
-  //   />
-  //   <Tab.Screen name="Cart" component={Cart} 
-  //      options={{
-  //       // tabBarLabel: 'Home',
-  //       // tabBarIcon: ({ color }) => (
-  //       //   <CartIcon/>
-  //       // ),
-  //       tabBarIcon: ({ color }) => (
-  //         <CartIcon color={color} />
-  //       ),
-  //     }}
-  //     onPress={()=>console.log('ooooo')}
-  //   />
-  //    <Tab.Screen name="Account" component={Account} 
-  //      options={{
-  //       // tabBarLabel: 'Home',
-  //       tabBarIcon: ({ color }) => (
-  //         <MaterialCommunityIcons name="account" color={color} size={26} />
-  //       ),
-  //     }}
-  //   />
-  // </Tab.Navigator>
   
   <Stack.Navigator screenOptions={{headerShown:false}}>
   <Stack.Screen name="DrawerHome" component={DrawerHome} /> 
@@ -153,7 +105,7 @@ useEffect(() => {
   <Stack.Screen name="GetData" component={GetData} />
   <Stack.Screen name="Orders" component={Orders} />
   <Stack.Screen name="DetailOrders" component={DetailOrders} />
-</Stack.Navigator>
+  </Stack.Navigator>
    
   )
 }

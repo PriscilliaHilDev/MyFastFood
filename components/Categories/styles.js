@@ -5,8 +5,6 @@ const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
 
-
-
 const styles = StyleSheet.create({
     container:{
         backgroundColor:"#FFC26C",

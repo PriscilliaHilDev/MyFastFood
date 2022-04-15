@@ -22,10 +22,8 @@ const Items = ({item}) => {
     const {deleteOrderItem, queryOneProduct} = useContext(FirebaseContext);
     const dispatch = useDispatch()
     const navigation = useNavigation()
-    const {cart:{listCart}, listProducts} = useSelector(state => state)
+    const {cart:{listCart}} = useSelector(state => state)
 
-    // const readProduct = listProducts.length > 0 && listProducts.filter(e => (e.id == item.product_id)) 
-    // console.log(readProduct, 'cadddiiiiiiiiiiiii')
 
     const getDatas = async () => {
       

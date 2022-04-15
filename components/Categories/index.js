@@ -21,14 +21,6 @@ const index = () => {
         }
     }, [])
 
-    // const navigation = useNavigation()
-
-    // const noFilter = () => {
-    //     dispatch(productListByCategory(0))
-    //     navigation.navigate("Products")
-    // }
-
-
 
     return (
       

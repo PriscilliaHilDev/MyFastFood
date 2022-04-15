@@ -181,31 +181,6 @@ const MoreInfos = ({route}) => {
                           handleSubmit()
                         }}
                     />
-                    {/* <PhoneInput
-                      placeholder='Votre n° de Mobile'
-                      defaultCode="MQ"
-                      layout="first"
-                      withShadow
-                      autoFocus
-                      containerStyle={styles.inputPhone}
-                      textContainerStyle={{ borderTopRightRadius:40, borderBottomRightRadius:40}}
-                      textInputStyle={{color:"black", fontSize:15, padding:0, paddingLeft:10, marginRight:15}}
-                      codeTextStyle={{color:"black", fontSize:14.5, bottom:3,  marginRight:5}}
-                        onChangeText={handleChange('phone')}
-                        onBlur={handleBlur('phone')}
-                        value={values.phone} 
-                        ref={adresseRef}
-                        onSubmitEditing={() => {
-                          handleSubmit()
-                        }}
-                    />
-                    {
-                      errors.phone || touched.phone ?
-                      <Text style={{position:'relative', bottom:windowWidth/12, fontSize:12, fontWeight:'bold', paddingLeft:windowWidth/40,}}>{ errors.phone }</Text>
-                      : 
-                      <Text></Text>
-                    }
-                */}
 
                     {
                       load ?
@@ -217,17 +192,18 @@ const MoreInfos = ({route}) => {
                           position:'absolute',
                           top:windowWidth/2.45
                         }}
-                    />
+                        />
                       :
-                      <Button onPress={handleSubmit} 
-                      buttonStyle={styles.btnLogin}
-                      containerStyle={{bottom:0, position:'relative', marginLeft:5, marginRight:5}}
-                      titleStyle={{color:'whitesmoke'}}
-                      title="INSCRIPTION"
-                      disabled={!(dirty && isValid)}
-                      disabledStyle={{backgroundColor: 'rgba(255, 109, 0, 0.5)'}}
-                      disabledTitleStyle={{color:'rgba(255, 255, 255, 0.5)'}}
-                    />}
+                        <Button onPress={handleSubmit} 
+                          buttonStyle={styles.btnLogin}
+                          containerStyle={{bottom:0, position:'relative', marginLeft:5, marginRight:5}}
+                          titleStyle={{color:'whitesmoke'}}
+                          title="INSCRIPTION"
+                          disabled={!(dirty && isValid)}
+                          disabledStyle={{backgroundColor: 'rgba(255, 109, 0, 0.5)'}}
+                          disabledTitleStyle={{color:'rgba(255, 255, 255, 0.5)'}}
+                        />
+                    }
                   </View>
                   </KeyboardAwareScrollView>
                 )}

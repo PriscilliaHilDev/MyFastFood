@@ -10,24 +10,10 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 
 const List = () => {
   const windowWidth = Dimensions.get('window').width;
-  const windowHeight = Dimensions.get('window').height;
   
-      const dispatch = useDispatch()
-       const {cart: {listCart}} = useSelector(state => state)
+      const {cart: {listCart}} = useSelector(state => state)
 
-
-      //  const ressetCountCart = () => {
-
-      //       if(listCart.length === 0){
-      //             dispatch(ressetCart(0))
-      //       }
-      // }
-      //  useEffect(() => {
-      //       ressetCountCart()
-      //        return () => {
-      //             ressetCountCart()
-      //        }
-      //  }, [])
+    
       const navigation = useNavigation()
     return (
           <View style={{flex:1}} >

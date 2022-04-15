@@ -21,19 +21,6 @@ const Items = ({item, navigat}) => {
 
     const user = auth().currentUser
 
-    // const getCurrentQuantityOfCart = () => {
-    //     if(listCart.length > 0){
-    //         let totalItem = 0;
-    //         listCart.forEach(element => {
-    //             totalItem = totalItem + element.quantity
-    //         })
-    //          return totalItem;
-    //     }else{
-    //         return 0;
-    //     }
-    // }
-   
-
     const loaderTime = () =>{
         return(
             setTimeout(() => {
@@ -105,12 +92,6 @@ const Items = ({item, navigat}) => {
         
     }      
 
-    // useEffect(() => {
-    
-    //     return () => {
-    //         dispatch(getLoading(false))
-    //     }
-    // }, [])
 
     const cardDimension = (windowWidth)/2.2;
     const cardHeight = (windowHeight)/3

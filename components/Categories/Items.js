@@ -24,7 +24,6 @@ const Items = ({item}) => {
   
      const getActif = (id) => {
          if(route.name == 'Products' && id == null){
-          
             return <Text style={styles.menuItemActive}>{item.name}</Text>
          }
          if(id == byCategory){
