@@ -7,7 +7,7 @@ import { productListByCategory } from '../../Redux/Actions/byCategory';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
 
-const index = () => {
+const Index = () => {
 
     const {byCategory} = useSelector(state => state);
     const dispatch = useDispatch();
@@ -33,4 +33,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

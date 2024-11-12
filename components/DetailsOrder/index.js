@@ -6,7 +6,7 @@ import styles from './styles';
 import colors from '../../assets/colors';
 
 
-const index = ({route}) => {
+const Index = ({route}) => {
 
     const { id, total, status} = route.params;
 
@@ -33,4 +33,4 @@ const index = ({route}) => {
     )
 }
 
-export default index
+export default Index

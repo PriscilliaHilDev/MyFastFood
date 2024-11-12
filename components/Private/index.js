@@ -20,7 +20,7 @@ import GetData from '../Cart/getData';
 
 
 
-const index = () => {
+const Index = () => {
   const {auth, queryAllOrderItems} = useContext(FirebaseContext);
 
   const  dispatch = useDispatch()
@@ -76,18 +76,48 @@ useEffect(() => {
 
   const DrawerHome = (props) => {
     return (
-    
-      <Drawer.Navigator  drawerContent={props => <Content {... props} />}>
-        <Drawer.Screen name="Products" component={Products} />
-        <Drawer.Screen name="FilterProducts" component={FilterProducts} />
-        <Drawer.Screen name="Detail" component={Detail} />
-        <Drawer.Screen name="Account" component={Account} />
-        <Drawer.Screen name="Cart" component={Cart} />
-        <Drawer.Screen name="GetData" component={GetData} />
-        <Drawer.Screen name="Orders" component={Orders} />
-        <Drawer.Screen name="DetailOrders" component={DetailOrders} />
+      <Drawer.Navigator drawerContent={props => <Content {...props} />}>
+        <Drawer.Screen 
+          name="Products" 
+          component={Products} 
+          options={{ headerShown: false }} 
+        />
+        <Drawer.Screen 
+          name="FilterProducts" 
+          component={FilterProducts} 
+          options={{ headerShown: false }} 
+        />
+        <Drawer.Screen 
+          name="Detail" 
+          component={Detail} 
+          options={{ headerShown: false }} 
+        />
+        <Drawer.Screen 
+          name="Account" 
+          component={Account} 
+          options={{ headerShown: false }} 
+        />
+        <Drawer.Screen 
+          name="Cart" 
+          component={Cart} 
+          options={{ headerShown: false }} 
+        />
+        <Drawer.Screen 
+          name="GetData" 
+          component={GetData} 
+          options={{ headerShown: false }} 
+        />
+        <Drawer.Screen 
+          name="Orders" 
+          component={Orders} 
+          options={{ headerShown: false }} 
+        />
+        <Drawer.Screen 
+          name="DetailOrders" 
+          component={DetailOrders} 
+          options={{ headerShown: false }} 
+        />
       </Drawer.Navigator>
-  
     );
   }
 
@@ -110,4 +140,4 @@ useEffect(() => {
   )
 }
 
-export default index
+export default Index

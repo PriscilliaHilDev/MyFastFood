@@ -10,7 +10,7 @@ import Infos from './infos';
 import { getOrderLoad } from '../../Redux/Actions/loaders';
 import LottieView from "lottie-react-native";
 
-const index = () => {
+const Index = () => {
 
   const dispatch = useDispatch()
    const {loaders:{orderLoad}}  = useSelector(state => state)
@@ -50,4 +50,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

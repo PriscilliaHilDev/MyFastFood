@@ -18,7 +18,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import ModalCgu from "./modalCgu"
 
 
-const index = () => {
+const Index = () => {
 
   const [visible, setVisible] = useState(false);
 
@@ -320,4 +320,4 @@ const index = () => {
                 
 }
 
-export default index
+export default Index

@@ -15,7 +15,7 @@ import { useSelector, useDispatch} from 'react-redux';
 import { setNestedObjectValues } from 'formik';
 
 
-const getData = ({route, navigation}) => {
+const GetData = ({route, navigation}) => {
 
     const phoneInput = useRef(null);
     const [value, setValue] = useState(null);
@@ -628,4 +628,4 @@ const getData = ({route, navigation}) => {
   );
 };
 
-export default getData;
+export default GetData;

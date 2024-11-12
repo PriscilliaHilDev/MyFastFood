@@ -16,7 +16,7 @@ import { useToast } from "react-native-toast-notifications";
 import styles from "./styles";
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const index = ({navigation}) => {
+const Index = ({navigation}) => {
     const toast = useToast();
 
     const windowWidth = Dimensions.get('window').width;
@@ -152,4 +152,4 @@ const index = ({navigation}) => {
     )
 }
 
-export default index
+export default Index

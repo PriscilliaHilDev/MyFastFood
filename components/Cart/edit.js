@@ -21,7 +21,7 @@ const edit = () => {
 
     const {editCart:{modal, idOrderItem, idProductOrder}, listProducts} = useSelector(state => state);
 
-    const getData = 
+    const GetData = 
         
         listProducts.filter(element =>{
             if(element.id === idProductOrder){

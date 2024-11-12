@@ -12,7 +12,7 @@ import { Button } from 'react-native-elements';
 
 
 
-const index = ({navigation}) => {
+const Index = ({navigation}) => {
   
     const windowWidth = Dimensions.get('window').width;
     const windowHeight = Dimensions.get('window').height;
@@ -163,4 +163,4 @@ const index = ({navigation}) => {
     )
 }
 
-export default index
+export default Index

@@ -10,7 +10,7 @@ import {FirebaseContext} from '../../FirebaseContext';
 import colors, {getHeight, getIconSize, getfontSize, getWidth} from "../../assets/colors";
 
 
-const index = ({check}) => {
+const Index = ({check}) => {
 
     
     const {auth} = useContext(FirebaseContext);
@@ -68,4 +68,4 @@ const index = ({check}) => {
     )
 }
 
-export default index;
+export default Index;

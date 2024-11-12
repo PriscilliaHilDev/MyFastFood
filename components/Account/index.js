@@ -1,28 +1,20 @@
 import React, {useContext, useEffect, useState } from 'react';
-import { View, Text, Pressable, Dimensions} from 'react-native';
+import { View, Text, Dimensions} from 'react-native';
 import Header from "../Header";
 import colors, { getfontSize, getIconSize } from "../../assets/colors";
 import styles from "./styles";
 import { Avatar } from 'react-native-elements';
 import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
-import { useSelector } from 'react-redux';
 import { FirebaseContext } from '../../FirebaseContext';
-import TabMenu from '../TabMenu';
-import { getFontScale } from 'react-native-device-info';
 
-const index = () => {
+const Index = () => {
 
 const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
 
-    const navigation = useNavigation();
     const {auth, getUser} = useContext(FirebaseContext)
     const [adresse, setAdresse] = useState(null)
     const [phone, setPhone]= useState(null)
-    const [nom, setNom]= useState(null)
-    const [prenom, setPrenom]= useState(null)
 
     const user = auth().currentUser
    
@@ -74,7 +66,7 @@ const windowHeight = Dimensions.get('window').height;
 
 
 
-    const getData = async () => {
+    const GetData = async () => {
         await getUser(user.uid).onSnapshot((snapshot)=>{
 
           if(snapshot.data()?.adresse){
@@ -89,7 +81,7 @@ const windowHeight = Dimensions.get('window').height;
     }
 
     useEffect(() => {
-        const datasUp = getData()
+        const datasUp = GetData()
         return () => {
         datasUp;
         }
@@ -147,4 +139,4 @@ const windowHeight = Dimensions.get('window').height;
     )
 }
 
-export default index
+export default Index

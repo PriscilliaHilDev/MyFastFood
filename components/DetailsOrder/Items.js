@@ -15,7 +15,7 @@ const Items = ({item}) => {
     const [price, setPrice] = useState("")
 
 
-    const getData = async () => {
+    const GetData = async () => {
         await queryOneProduct(item.product_id).onSnapshot((snapshot)=>{
         setName(snapshot.data()?.name)
           setPrice(snapshot.data()?.price)
@@ -25,7 +25,7 @@ const Items = ({item}) => {
     }
 
     useEffect(() => {
-        const datasUp = getData()
+        const datasUp = GetData()
         return () => {
         datasUp;
         }

@@ -8,7 +8,7 @@ import { Dimensions } from 'react-native';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-const index = ({navigation}) => {
+const Index = ({navigation}) => {
 
     return (
         <>
@@ -38,5 +38,5 @@ const index = ({navigation}) => {
     )
 }
 
-export default index
+export default Index
 

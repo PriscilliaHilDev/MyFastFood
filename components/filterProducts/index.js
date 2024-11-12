@@ -10,7 +10,7 @@ import TabMenu from '../TabMenu';
 import LottieView from "lottie-react-native";
 
 
-const index = ({navigation}) => {
+const Index = ({navigation}) => {
 
     const {auth} = useContext(FirebaseContext);
     const user = auth().currentUser
@@ -64,4 +64,4 @@ const index = ({navigation}) => {
     )
 }
 
-export default index
+export default Index

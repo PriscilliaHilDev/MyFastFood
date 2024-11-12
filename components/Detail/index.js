@@ -14,7 +14,7 @@ import { useToast } from "react-native-toast-notifications";
 import { ScrollView } from 'react-native-gesture-handler';
 
 
-const index = ({route}) => {
+const Index = ({route}) => {
 
 
     const windowWidth = Dimensions.get('window').width;
@@ -207,4 +207,4 @@ const index = ({route}) => {
     )
 }
 
-export default index
+export default Index

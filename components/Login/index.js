@@ -20,7 +20,7 @@ import styles from "./styles";
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { get } from 'react-hook-form';
 
-const index = ({navigation}) => {
+const Index = ({navigation}) => {
     const toast = useToast();
     const {loaders:{securePassword}} = useSelector(state => state)
     const dispatch = useDispatch()
@@ -254,4 +254,4 @@ const index = ({navigation}) => {
     )
 }
 
-export default index
+export default Index

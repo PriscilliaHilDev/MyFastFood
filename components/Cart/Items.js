@@ -25,7 +25,7 @@ const Items = ({item}) => {
     const {cart:{listCart}} = useSelector(state => state)
 
 
-    const getDatas = async () => {
+    const GetDatas = async () => {
       
         await queryOneProduct(item.product_id).onSnapshot((snapshot)=>{
           if(!!snapshot && listCart.length > 0){
